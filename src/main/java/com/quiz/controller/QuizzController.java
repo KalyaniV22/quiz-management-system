@@ -25,13 +25,13 @@ public class QuizzController {
 	@Autowired
 	public QuizzServiceImpl quizzserviceimpl;
 
-	/*@PostMapping("/create")
+	@PostMapping("/create")
 	public ResponseEntity<String> createquiz(@RequestParam int noofquestion, @RequestParam String quizname,
 			@RequestParam String category) {
 		this.quizzserviceimpl.createquiz(quizname, noofquestion, category);
 		String msg = "quizcreated!";
 		return new ResponseEntity<>(msg, HttpStatus.CREATED);
-	}*/
+	}
 
 	@GetMapping("/getData/{id}")
 	public ResponseEntity<List<QuizDTO>> getByid(@PathVariable("id") int id) {
