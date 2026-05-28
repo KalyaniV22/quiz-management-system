@@ -7,7 +7,7 @@ import com.quiz.request.QuizRequest;
 
 public interface QuizzService {
 
-	//public String createquiz(String quizName,int noofquestion,String category);
+	public String createquiz(String quizName,int noofquestion,String category);
 	
 	public List<QuizDTO> listque(int id);
 	
