@@ -21,7 +21,7 @@ public class QuizzServiceImpl implements QuizzService {
 	@Autowired
 	private QuizRepository quizrepo;
 
-	/*@Override
+	@Override
 	public String createquiz(String quizName, int noofquestion, String category) {
 		Quiz quiz = new Quiz();
 		quiz.setTitle(quizName);
@@ -29,7 +29,7 @@ public class QuizzServiceImpl implements QuizzService {
 		quiz.setQuestion(question);
 		quizzrepo.save(quiz);
 		return "created";
-	}*/
+	}
 
 	@Override
 	public List<QuizDTO> listque(int id) {
